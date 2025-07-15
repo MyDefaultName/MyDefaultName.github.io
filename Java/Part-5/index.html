@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>While Loop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../java-style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <img src="../../css/logo.png" alt="Logo">
+            <span class="logo-text">MyWebsite</span>
+        </span>
+        <a href="../../index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Java</button></a>
+        <a href="../../Java-IDE/index.html"><button>Java IDE</button></a>
+        <a href="../../Animation/index.html"><button>Animation</button></a>
+    </div>
+    <div class="content">
+        <h1>Part 5 - Java While Loops</h1>
+        <p>
+            A <strong>while loop</strong> checks the condition <em>before</em> running the block of code.
+            If the condition is true, the loop runs. It keeps repeating until the condition becomes false.
+        </p>
+
+        <h2>Syntax:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+while (condition) {
+    // code runs if the condition is true
+}
+    </pre>
+
+        <h2>Example:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+public class OddNumberPrinter {
+    public static void main(String[] args) {
+        int number = 1;
+
+        // This loop prints odd numbers from 1 to 9  
+        while (number < 10) {
+            System.out.println("Odd number: " + number);
+            number += 2;
+        }
+    }
+}
+    </pre>
+
+        <h2>Explanation:</h2>
+        <ul style="font-size:17px; color:#444;">
+            <li><code>int number = 1</code> → Start at 1 (first odd number).</li>
+            <li><code>while (number < 10)</code> → Run the loop while the number is less than 10.</li>
+            <li><code>System.out.println(...)</code> → Print the current odd number.</li>
+            <li><code>number += 2</code> → Increase by 2 to get the next odd number.</li>
+        </ul>
+
+        <h2>Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Odd number: 1
+Odd number: 3
+Odd number: 5
+Odd number: 7
+Odd number: 9
+    </pre>
+
+        <h2>In Simple Words:</h2>
+        <p>
+            This program uses a while loop to print odd numbers from 1 to 9. Since odd numbers aren't divisible by 2,
+            we start at 1 and increase by 2 each time. The loop stops when the number reaches 10 or more.
+        </p>
+        <h2>Exercise: Try It Yourself!</h2>
+        <p>
+            Write a Java program using a <strong>while loop</strong> to print even numbers from 2 to 10.
+        </p>
+        <ul style="font-size:17px; color:#444;">
+            <li>Start with a variable set to 2.</li>
+            <li>Create a <code>while</code> loop that continues as long as the number is less than or equal to 10.</li>
+            <li>Inside the loop, print the number and increase it by 2 each time.</li>
+        </ul>
+
+        <h2>Example Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Even number: 2
+Even number: 4
+Even number: 6
+Even number: 8
+Even number: 10
+</pre>
+        <button class="lesson-btn" onclick="window.location.href='../Part-4/index.html'" style="margin-top:18px;">
+            ← Back to Part 4 - For Loop
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../Part-6/index.html'" style="margin-top:18px;">
+            Next: Part 6 - Do-While Loop
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../../Java-IDE/index.html'" style="margin-top:18px;">
+            Try Your Code in the Java IDE
+        </button>
+    </div>
+</body>
+
+</html>

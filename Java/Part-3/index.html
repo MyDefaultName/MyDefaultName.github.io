@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>If Else Statements</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../java-style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <img src="../../css/logo.png" alt="Logo">
+            <span class="logo-text">MyWebsite</span>
+        </span>
+        <a href="../../index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Java</button></a>
+        <a href="../../Java-IDE/index.html"><button>Java IDE</button></a>
+        <a href="../../Animation/index.html"><button>Animation</button></a>
+    </div>
+    <div class="content">
+        <h1>Part 3 - Java If Else Statements</h1>
+        <p>
+            In Java, we use <strong>if else statements</strong> when we want the program to decide something based on a
+            condition.
+            It's like asking a question: "Is this true?" If yes, then do something. If not, do something else.
+        </p>
+
+        <h2>Syntax:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+if (condition) {
+    // code runs if condition is true
+} else {
+    // code runs if condition is false
+}
+    </pre>
+
+        <h2>Example:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+public class GradeChecker {
+    public static void main(String[] args) {
+        int grade = 85;
+
+        if (grade >= 75) {
+            System.out.println("You passed");
+        } else {
+            System.out.println("You failed try again");
+        }
+    }
+}
+    </pre>
+
+        <h2>Explanation:</h2>
+        <ul style="font-size:17px; color:#444;">
+            <li><strong>if (grade >= 75)</strong> - The program checks if the grade is 75 or higher.</li>
+            <li>If true, it shows <em>"You passed!"</em></li>
+            <li>If false, it shows <em>"You failed. Try again!"</em></li>
+        </ul>
+
+        <h2>Exercise: Try It Yourself!</h2>
+        <p>
+            Write a Java program that checks if a person is allowed to vote.
+        </p>
+        <ul style="font-size:17px; color:#444;">
+            <li>Store the person's age in a variable.</li>
+            <li>If the age is 18 or above, print: <em>"You are allowed to vote."</em></li>
+            <li>If the age is below 18, print: <em>"You are not allowed to vote yet."</em></li>
+        </ul>
+
+        <h2>Sample Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Enter your age: 20
+You are allowed to vote.
+    </pre>
+        <button class="lesson-btn" onclick="window.location.href='../Part-2/index.html'" style="margin-top:18px;">
+            ← Back to Part 2 - Variable and Data Types
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../Part-4/index.html'">
+            Next: Part 4 - For Loop
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../../Java-IDE/index.html'" style="margin-top:18px;">
+            Try Your Code in the Java IDE
+        </button>
+    </div>
+</body>
+
+</html>

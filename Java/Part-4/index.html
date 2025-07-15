@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For Loop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../java-style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <img src="../../css/logo.png" alt="Logo">
+            <span class="logo-text">MyWebsite</span>
+        </span>
+        <a href="../../index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Java</button></a>
+        <a href="../../Java-IDE/index.html"><button>Java IDE</button></a>
+        <a href="../../Animation/index.html"><button>Animation</button></a>
+    </div>
+    <div class="content">
+        <h1>Part 4 - Java For Loops</h1>
+        <p>
+            In Java, we use <strong>for loops</strong> when we want the program to repeat something a certain number of
+            times.
+            It's like saying: “Do this again and again until we reach the end.”
+        </p>
+
+        <h2>Syntax:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+for (initialization; condition; update) {
+    // code runs again and again while the condition is true
+}
+    </pre>
+
+        <h2>Example:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+public class NumberPrinter {
+    public static void main(String[] args) {
+        // This loop prints numbers from 1 to 5
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Number: " + i);
+        }
+    }
+}
+    </pre>
+
+        <h2>Explanation:</h2>
+        <ul style="font-size:17px; color:#444;">
+            <li><code>int i = 1;</code> → We start counting from 1.</li>
+            <li><code>i <= 5;</code> → We keep going while <code>i</code> is less than or equal to 5.</li>
+            <li><code>i++;</code> → We add 1 to <code>i</code> every time the loop runs.</li>
+            <li>Inside the loop, we print the value of <code>i</code>.</li>
+        </ul>
+
+        <h2>Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+    </pre>
+
+        <h2>In Simple Words:</h2>
+        <p>
+            A for loop helps us repeat code easily. Instead of writing <code>System.out.println()</code> many times,
+            the loop does it for us.
+        </p>
+        <h2>Exercise: Try It Yourself!</h2>
+        <p>
+            Write a Java program using a <strong>for loop</strong> to print all even numbers from 2 to 10.
+        </p>
+        <ul style="font-size:17px; color:#444;">
+            <li>Start with an integer variable set to 2.</li>
+            <li>Use a for loop that continues as long as the number is less than or equal to 10.</li>
+            <li>Inside the loop, print the number and increase it by 2 each time.</li>
+        </ul>
+
+        <h2>Example Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Even number: 2
+Even number: 4
+Even number: 6
+Even number: 8
+Even number: 10
+</pre>
+
+        <button class="lesson-btn" onclick="window.location.href='../Part-3/index.html'" style="margin-top:18px;">
+            ← Back to Part 3 - If Else Statement
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../Part-5/index.html'" style="margin-top:18px;">
+            Next: Part 5 - While Loop
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../../Java-IDE/index.html'" style="margin-top:18px;">
+            Try Your Code in the Java IDE
+        </button>
+
+    </div>
+</body>
+
+</html>

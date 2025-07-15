@@ -1,0 +1,26 @@
+.lesson-btn {
+    background: linear-gradient(90deg, #4e54c8 60%, #6c63ff 100%);
+    color: #fff;
+    border: none;
+    padding: 18px 0;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 28px;
+    transition:
+        background 0.4s cubic-bezier(.4, 0, .2, 1),
+        box-shadow 0.4s cubic-bezier(.4, 0, .2, 1),
+        transform 0.2s cubic-bezier(.4, 0, .2, 1);
+    width: 50%;
+    display: block;
+    box-shadow: 0 4px 16px rgba(78, 84, 200, 0.15);
+    letter-spacing: 1px;
+    margin: 0 auto 20px auto;
+}
+
+.lesson-btn:hover {
+    background: linear-gradient(90deg, #6c63ff 60%, #4e54c8 100%);
+    box-shadow: 0 8px 24px rgba(78, 84, 200, 0.25);
+    transform: translateY(-2px) scale(1.02);
+}

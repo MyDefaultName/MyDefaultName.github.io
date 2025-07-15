@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f6fb;
+}
+.navbar {
+    background: linear-gradient(90deg, #333 60%, #4e54c8 100%);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+.logo-text {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navbar button {
+    background: transparent;
+    color: #fff;
+    border: none;
+    padding: 16px 28px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 22px;
+    transition: 
+        background 0.3s cubic-bezier(.4,0,.2,1),
+        color 0.3s cubic-bezier(.4,0,.2,1),
+        padding 0.3s cubic-bezier(.4,0,.2,1),
+        font-size 0.3s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+}
+.navbar button:hover, .navbar button.active {
+    background: #fff;
+    color: #4e54c8;
+    padding: 12px 22px;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(78,84,200,0.15);
+}
+.content {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(78,84,200,0.08);
+    padding: 40px 36px;
+    min-height: 300px;
+}
+h1 {
+    color: #4e54c8;
+    margin-top: 0;
+}
+p {
+    color: #444;
+    font-size: 18px;
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .content {
+        padding: 20px 10px;
+    }
+    .logo-text {
+        font-size: 18px;
+    }
+}
+/* Settings button design */
+.settings-btn {
+    background: #fff;
+    color: #4e54c8;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: auto;
+    box-shadow: 0 2px 8px rgba(78,84,200,0.10);
+    transition: 
+        background 0.3s cubic-bezier(.4,0,.2,1),
+        color 0.3s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.3s cubic-bezier(.4,0,.2,1),
+        transform 0.2s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 24px;
+}
+
+.settings-btn:hover {
+    background: #4e54c8;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(78,84,200,0.18);
+    transform: translateY(-2px) scale(1.04);
+}

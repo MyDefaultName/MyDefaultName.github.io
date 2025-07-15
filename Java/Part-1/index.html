@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to Java</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../java-style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <img src="../../css/logo.png" alt="Logo">
+            <span class="logo-text">MyWebsite</span>
+        </span>
+        <a href="../../index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Java</button></a>
+        <a href="../../Java-IDE/index.html"><button>Java IDE</button></a>
+        <a href="../../Animation/index.html"><button>Animation</button></a>
+    </div>
+    <div class="content">
+        <h1>Part 1 - Introduction to Java</h1>
+        <p>
+            Java is a statically-typed language, meaning you must declare the type of a variable before using it. The
+            basic structure of a Java program involves classes and methods. A <strong>main</strong> method is the entry
+            point for execution.
+        </p>
+        <h2>Example:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+        </pre>
+        <ul style="font-size:17px; color:#444; margin-top:24px;">
+            <li>
+                <strong>public class HelloWorld:</strong> This declares a class named <code>HelloWorld</code>. The
+                <code>public</code> keyword means it's accessible from anywhere. Class names typically start with a
+                capital letter.
+            </li>
+            <li>
+                <strong>public static void main(String[] args):</strong> This is the main method. <code>public</code>
+                makes it accessible from anywhere. <code>static</code> means it belongs to the class itself, not a
+                specific object. <code>void</code> indicates it doesn't return a value. <code>String[] args</code>
+                allows command-line arguments to be passed to the program.
+            </li>
+            <li>
+                <strong>System.out.println("Hello, World!");</strong> This prints "Hello, World!" to the console.
+                <code>System.out</code> is a static member of the <code>System</code> class that represents the standard
+                output stream. <code>println()</code> is a method that prints a line of text.
+            </li>
+        </ul>
+        <h2>Key Syntax Points:</h2>
+        <ul style="font-size:17px; color:#444; margin-top:12px;">
+            <li><strong>Semicolons:</strong> Every statement in Java ends with a semicolon (<code>;</code>).</li>
+            <li><strong>Braces:</strong> Curly braces <code>{}</code> define blocks of code, such as the body of a
+                method or a loop.</li>
+            <li><strong>Comments:</strong> <code>//</code> for single-line comments and <code>/* ... */</code> for
+                multi-line comments.</li>
+            <li><strong>Case Sensitivity:</strong> Java is case-sensitive (<code>HelloWorld</code> is different from
+                <code>helloworld</code>).
+            </li>
+        </ul>
+        <h2>Exercise: Try It Yourself!</h2>
+        <p>
+            Write a Java program that prints your name to the console. Use the example above as a guide. Type your code
+            in the editor below and imagine what the output would be!
+        </p>
+        <pre contenteditable="true" class="exercise-editor"
+            style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;min-height:120px;">
+public class MyName {
+    public static void main(String[] args) {
+        // Print your name here
+        System.out.println("Your Name");
+    }
+}
+        </pre>
+        <button class="lesson-btn" onclick="window.location.href='../Part-2/index.html'">
+            Next: Part 2 - Variable and Data Types
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../../Java-IDE/index.html'" style="margin-top:18px;">
+            Try Your Code in the Java IDE
+        </button>
+    </div>
+</body>
+
+</html>

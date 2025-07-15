@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Variables and Data Types</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../java-style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <img src="../../css/logo.png" alt="Logo">
+            <span class="logo-text">MyWebsite</span>
+        </span>
+        <a href="../../index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Java</button></a>
+        <a href="../../Java-IDE/index.html"><button>Java IDE</button></a>
+        <a href="../../Animation/index.html"><button>Animation</button></a>
+    </div>
+    <div class="content">
+        <h1>Part 2 - Variables and Data Types</h1>
+        <p>
+            In Java, a <strong>variable</strong> is like a container that stores data. Every variable has a
+            <strong>type</strong> — which tells Java what kind of data the variable holds. For example, is it a number?
+            A word? A true/false value?
+        </p>
+
+        <h2>Variable Syntax:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+dataType variableName = value;
+    </pre>
+
+        <h2>Common Data Types:</h2>
+        <ul style="font-size:17px; color:#444;">
+            <li><strong>int:</strong> Whole numbers (e.g., 7, -42)</li>
+            <li><strong>double:</strong> Decimal numbers (e.g., 3.14, -2.5)</li>
+            <li><strong>char:</strong> Single character (e.g., 'A')</li>
+            <li><strong>String:</strong> Text (e.g., "Hello!")</li>
+            <li><strong>boolean:</strong> True or false values</li>
+        </ul>
+
+        <h2>Example:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+public class InfoDemo {
+    public static void main(String[] args) {
+        int age = 20;
+        double price = 99.99;
+        char grade = 'A';
+        String name = "Alexa";
+        boolean isStudent = true;
+
+        System.out.println(name + " is " + age + " years old.");
+    }
+}
+    </pre>
+
+        <h2>Explanation:</h2>
+        <ul style="font-size:17px; color:#444;">
+            <li><code>int age = 20;</code> defines an integer variable named <code>age</code>.</li>
+            <li><code>String name = "Alexa";</code> stores a name in text form.</li>
+            <li><code>System.out.println(...);</code> prints the combined message to the console.</li>
+        </ul>
+
+        <h2>Exercise: Try It Yourself!</h2>
+        <p>
+            Create a Java program that stores the following:
+        </p>
+        <ul style="font-size:17px; color:#444;">
+            <li>Your favorite number</li>
+            <liThe first letter of your name</li>
+                <liWhether you love programming (<em>true</em> or <em>false</em>)</li>
+                    <liThen print them all out using <code>System.out.println()</code></li>
+        </ul>
+
+        <h2>Sample Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Favorite number: 7  
+Initial: J  
+Loves programming: true
+    </pre>
+        <button class="lesson-btn" onclick="window.location.href='../Part-1/index.html'" style="margin-top:18px;">
+            ← Back to Part 1 - Introduction to Java
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../Part-3/index.html'">
+            Next: Part 3 - If else Statement
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../../Java-IDE/index.html'" style="margin-top:18px;">
+            Try Your Code in the Java IDE
+        </button>
+    </div>
+</body>
+
+</html>

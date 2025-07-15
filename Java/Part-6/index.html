@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Do While Loop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../java-style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <span class="logo">
+            <img src="../../css/logo.png" alt="Logo">
+            <span class="logo-text">MyWebsite</span>
+        </span>
+        <a href="../../index.html"><button>Home</button></a>
+        <a href="../index.html"><button>Java</button></a>
+        <a href="../../Java-IDE/index.html"><button>Java IDE</button></a>
+        <a href="../../Animation/index.html"><button>Animation</button></a>
+    </div>
+    <div class="content">
+        <h1>Part 6 - Java Do-While Loop</h1>
+        <p>
+            A <strong>do-while loop</strong> lets us run a block of code first, and then check the condition to see if
+            we should repeat.
+            It’s like saying: “Do this at least once, then check if we need to do it again.”
+        </p>
+
+        <h2>Syntax:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+do {
+    // code runs at least once
+} while (condition);
+    </pre>
+
+        <h2>Example:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+public class EvenNumberPrinter {
+    public static void main(String[] args) {
+        int number = 2;
+
+        // This loop prints even numbers from 2 to 10  
+        do {
+            System.out.println("Even number: " + number);
+            number += 2;
+        } while (number <= 10);
+    }
+}
+    </pre>
+
+        <h2>Explanation:</h2>
+        <ul style="font-size:17px; color:#444;">
+            <li><code>int number = 2</code> → Start at 2.</li>
+            <li><code>do { ... }</code> → Run the block first.</li>
+            <li><code>System.out.println(...)</code> → Show the current number.</li>
+            <li><code>number += 2</code> → Increase by 2 each time to get even numbers.</li>
+            <li><code>while (number <= 10)</code> → Keep going while number is 10 or less.</li>
+        </ul>
+
+        <h2>Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Even number: 2
+Even number: 4
+Even number: 6
+Even number: 8
+Even number: 10
+    </pre>
+
+        <h2>In Simple Words:</h2>
+        <p>
+            This <strong>do-while loop</strong> prints even numbers. It's useful when you want your code to run once
+            before checking if it should continue.
+            This saves time and keeps your code clean.
+        </p>
+        <h2>Exercise: Try It Yourself!</h2>
+        <p>
+            Write a Java program using a <strong>do-while loop</strong> that prints all multiples of 3 from 3 to 15.
+        </p>
+        <ul style="font-size:17px; color:#444;">
+            <li>Start with a variable set to 3.</li>
+            <li>Use a <code>do-while</code> loop to continue as long as the number is less than or equal to 15.</li>
+            <li>Inside the loop, print the number and increase it by 3 each time.</li>
+        </ul>
+
+        <h2>Example Output:</h2>
+        <pre style="background:#222;color:#fff;padding:18px;border-radius:12px;font-size:16px;overflow-x:auto;">
+Multiple of 3: 3
+Multiple of 3: 6
+Multiple of 3: 9
+Multiple of 3: 12
+Multiple of 3: 15
+</pre>
+        <button class="lesson-btn" onclick="window.location.href='../Part-5/index.html'" style="margin-top:18px;">
+            ← Back to Part 5 - While Loop
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../Part-7/index.html'" style="margin-top:18px;">
+            Next: Part 7 - Switch Statements
+        </button>
+        <button class="lesson-btn" onclick="window.location.href='../../Java-IDE/index.html'" style="margin-top:18px;">
+            Try Your Code in the Java IDE
+        </button>
+    </div>
+</body>
+
+</html>
